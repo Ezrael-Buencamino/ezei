@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 1px;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        button {
+            color: white;
+            background-color: red;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        button:hover {
+            background-color: darkred;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+        }
+
+        h1, p {
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .collapse {
+            transition: max-height 0.3s ease-out;
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        .collapse.show {
+            max-height: 500px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MY PORTFOLIO</h1>
+        <p>MY JOURNEY</p>
+    </header>
+
+    <div class="container mt-5">
+        <section id="ABOUT ME" class="mb-5">
+            <img src="image/download.jfif" alt="Ezrael Buencamino">
+            <p style="margin-top: 10px; font-size: 18px; font-weight: bold;">Ezrael Buencamino</p>
+            <button class="btn btn-danger" type="button" id="aboutMeButton" data-bs-toggle="collapse" data-bs-target="#aboutMeContent" aria-expanded="false" aria-controls="aboutMeContent">
+                ABOUT ME
+            </button>
+            <div class="collapse" id="aboutMeContent">
+                <p class="content">HI, I AM EZRAEL BUENCAMINO, I AM CURRENTLY A STUDENT. I ENJOY PLAYING ONLINE GAMES AND PHYSICAL ACTIVITIES.</p>
+            </div>
+        </section>
+
+        <section id="achivements" class="mb-5">
+            <button class="btn btn-danger" type="button" id="achievementsButton" data-bs-toggle="collapse" data-bs-target="#achievementsContent" aria-expanded="false" aria-controls="achievementsContent">
+                ACHIEVEMENTS
+            </button>
+            <div class="collapse" id="achievementsContent">
+                <ul class="content">
+                    <li>ACADEMIC EXCELLENCE AWARD</li>
+                    <li>COMMUNITY LEADERSHIP RECOGNITION</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-5">
+            <button class="btn btn-danger" type="button" id="skillsButton" data-bs-toggle="collapse" data-bs-target="#skillsContent" aria-expanded="false" aria-controls="skillsContent">
+                SKILLS
+            </button>
+            <div class="collapse" id="skillsContent">
+                <ul class="content">
+                    <li>PROGRAMMING LANGUAGES (PYTHON, HTML)</li>
+                    <li>PROBLEM SOLVING</li>
+                    <li>TEAM COLLABORATION</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-5">
+            <button class="btn btn-danger" type="button" id="projectsButton" data-bs-toggle="collapse" data-bs-target="#projectsContent" aria-expanded="false" aria-controls="projectsContent">
+                PROJECT & ACTIVITIES
+            </button>
+            <div class="collapse" id="projectsContent">
+                <ul class="content">
+                    <li>PORTFOLIO WEBSITE</li>
+                    <li>COMMUNITY OUTREACH PROGRAM</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="hobbies" class="mb-5">
+            <button class="btn btn-danger" type="button" id="hobbiesButton" data-bs-toggle="collapse" data-bs-target="#hobbiesContent" aria-expanded="false" aria-controls="hobbiesContent">
+                HOBBIES & INTERESTS
+            </button>
+            <div class="collapse" id="hobbiesContent">
+                <p class="content">I ENJOY PLAYING VOLLEYBALL AND PLAYING PIANO</p>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-5">
+            <button class="btn btn-danger" type="button" id="contactButton" data-bs-toggle="collapse" data-bs-target="#contactContent" aria-expanded="false" aria-controls="contactContent">
+                CONTACT INFORMATION
+            </button>
+            <div class="collapse" id="contactContent">
+                <p class="content">EMAIL: <a href="mailto:buencaminoezrael@gmail.com">BUENCAMINOEZRAEL@GMAIL.COM</a></p>
+                <p class="content">CONTACT NO. <a href="tel:09615028265">09615028265</a></p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 EZRAEL BUENCAMINO.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

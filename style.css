@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    color: white;
+    background-color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+button:active {
+    background-color: #8B0000;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+h1, p {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.collapse {
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.collapse.show {
+    max-height: 500px;
+}
